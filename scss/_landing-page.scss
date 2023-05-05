@@ -1,0 +1,47 @@
+* {
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+#landing-page {
+    height: 100vh;
+    background-image: linear-gradient(135deg, rgba(20,51,44,1) 15%, rgba(37,80,62,1) 40%, rgba(67,131,119,1) 63%, rgba(247,240,202,1) 99%);
+
+    display: grid;
+
+    section {
+        place-self: center;
+        overflow: hidden;
+    }
+
+
+    h1 {
+        background-image:  linear-gradient(0deg, rgba(230,168,58,1) 28%, rgba(247,240,202,1) 100%);
+        
+        background-clip: text;
+        -webkit-background-clip: text;
+        
+        color: transparent;
+
+        font-weight: 500;
+        font-size: 7rem;
+
+        animation: 2s anim-lineUp ease-out;
+    @keyframes anim-lineUp {
+        0% {
+            opacity: 0;
+            transform: translateY(80%);
+        }
+        20% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+            transform: translateY(0%);
+         }
+        100% {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+    }
+}

@@ -1,0 +1,45 @@
+.navigation-bar {
+  background-color: #14332C !important;
+}
+
+* {
+  font-family: "Darker Grotesque", sans-serif;
+}
+
+#landing-page {
+  height: 100vh;
+  background-image: linear-gradient(135deg, rgb(20, 51, 44) 15%, rgb(37, 80, 62) 40%, rgb(67, 131, 119) 63%, rgb(247, 240, 202) 99%);
+  display: grid;
+}
+#landing-page section {
+  place-self: center;
+  overflow: hidden;
+}
+#landing-page h1 {
+  background-image: linear-gradient(0deg, rgb(230, 168, 58) 28%, rgb(247, 240, 202) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 500;
+  font-size: 7rem;
+  animation: 2s anim-lineUp ease-out;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
