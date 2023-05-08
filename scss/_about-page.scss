@@ -1,0 +1,34 @@
+.about-page {
+    height: 100vh;
+    background-color: #D4753F;
+
+    h1 {
+        font-weight: 500;
+        font-size: 10rem;
+        padding: 25px 0 80px 40px;
+
+        background-image:  linear-gradient(0deg, rgba(255,255,255,1) 3%, rgba(247,240,202,1) 36%, rgba(246,233,162,1) 52%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    p {
+        background-color: $yellow;
+        width: 70vw;
+        padding: 30px;
+        border-radius: 20px;
+        font-size: 1.1rem;
+        margin-top: 1rem;
+    }
+
+    .border-color {
+        background-color: $beige;
+        padding: 20px 40px;
+        position: absolute;
+        right: 0;
+        display: flex;
+        align-content: center;
+        border-radius: 20px 0 0 20px;
+    }
+}
