@@ -10,6 +10,16 @@
   height: 100vh;
   background-image: linear-gradient(135deg, rgb(20, 51, 44) 15%, rgb(37, 80, 62) 40%, rgb(67, 131, 119) 63%, rgb(247, 240, 202) 99%);
   display: grid;
+  background-size: 400%;
+  animation: big-animation 4s infinite alternate;
+}
+@keyframes big-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 #landing-page section {
   place-self: center;
@@ -24,6 +34,9 @@
   font-weight: 500;
   font-size: 7rem;
   animation: 2s anim-lineUp ease-out;
+  animation: text-animation 4s infinite alternate;
+  background-size: 400%;
+  animation: big-animation 5s infinite alternate;
 }
 @keyframes anim-lineUp {
   0% {
@@ -40,6 +53,14 @@
   100% {
     opacity: 1;
     transform: translateY(0%);
+  }
+}
+@keyframes text-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
   }
 }
 @media (max-width: 500px) {
