@@ -6,6 +6,7 @@
         font-weight: 500;
     }
     h1 {
+        
         padding-left: 40px;
         font-size: 5rem;
 
@@ -15,6 +16,12 @@
         -webkit-background-clip: text;
         
         color: transparent;
+
+        @include mobile {
+            font-size: 2.5rem;
+            padding-left: 20px;
+            padding-top: 10px;
+        }
     }
 
     img {
@@ -24,6 +31,11 @@
         border-radius: 1.25rem;
 
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        @include mobile {
+            max-width: 90vw;
+            margin: 1rem 1rem 0.4rem;
+        }
     }  
 
     .pr-images {
@@ -32,7 +44,7 @@
         justify-content: center;
     }
 
-    button {
+    .button-button {
         background-color: #e6653a;
         border-radius: 20px;
         padding:  10px 50px;

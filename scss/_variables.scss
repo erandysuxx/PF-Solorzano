@@ -3,3 +3,13 @@ $dark-green: #25503E;
 $turquoise: #438377;
 $beige: #F7F0CA;
 $yellow: #E6A83A;
+
+$breakpoints: (
+    "mobile": 500px
+);
+
+@mixin mobile {
+    @media (max-width: map-get($breakpoints, "mobile")) {
+        @content;
+    }
+}

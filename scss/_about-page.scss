@@ -11,6 +11,11 @@
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
+
+        @include mobile {
+            font-size: 4rem;
+            padding: 0 0 0 15px;
+        }
     }
 
     p {
@@ -20,7 +25,15 @@
         border-radius: 20px;
         font-size: 1.1rem;
         margin-top: 1rem;
+
+        @include mobile {
+            width: 90vw;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: .9rem;
+        }
     }
+
 
     .border-color {
         background-color: $beige;
@@ -31,5 +44,11 @@
         align-content: center;
         border-radius: 20px 0 0 20px;
         margin-right: 0;
+
+        @include mobile {
+            position: static;
+            border-radius: 25px;
+            padding: 20px;
+        }
     }
 }

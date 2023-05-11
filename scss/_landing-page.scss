@@ -44,5 +44,8 @@
             transform: translateY(0%);
         }
     }
+    @include mobile {
+        font-size: 3.5rem;
+    }
     }
 }
