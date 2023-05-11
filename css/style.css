@@ -120,8 +120,9 @@
 @media (max-width: 500px) {
   .contact section {
     max-width: 90vw;
-    height: 85vh;
+    height: auto;
     overflow: scroll;
+    padding: 15px;
   }
 }
 .contact main {
